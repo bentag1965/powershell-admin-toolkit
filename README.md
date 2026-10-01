@@ -41,9 +41,16 @@ Run indefinitely by omitting `-DurationMinutes`:
 - Clear parameters and help
 - Useful as both a standalone tool and a starting point for automation
 
+### Get-SystemHealth.ps1
+
+Collects a structured health snapshot including OS details, uptime, physical memory, local disk capacity, active network adapters, and selected core Windows services.
+
+```powershell
+.\scripts\Get-SystemHealth.ps1 -OutputJson ".\reports\system-health.json"
+```
+
 ## Planned Additions
 
-- System health inventory
 - Disk cleanup and storage analysis
 - Network diagnostics
 - Windows service health checks
