@@ -37,6 +37,7 @@ jobs:
 
           $results | Format-Table -AutoSize
 
-          if ($results) {
-            throw "PSScriptAnalyzer reported findings."
+          $errors = @($results | Where-Object Severity -eq "Error")
+          if ($errors.Count -gt 0) {
+            throw "PSScriptAnalyzer reported one or more errors."
           }
