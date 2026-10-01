@@ -1,0 +1,22 @@
+# PowerShell / local output
+*.log
+*.csv
+*.xlsx
+*.json.local
+*.tmp
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# PowerShell
+*.clixml
